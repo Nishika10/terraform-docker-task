@@ -66,23 +66,24 @@ After applying the configuration, the Nginx web server runs successfully on the 
 
 ### 1. Terraform Init  
 Shows successful initialization of the Terraform working directory and Docker provider.  
-![Terraform Init Screenshot](screenshots/terraform-init.png)
+![Terraform Init Screenshot](screenshots/terraform-init.png.png)
 
 ### 2. Terraform Apply  
 Shows successful creation of the Docker container using Terraform.  
-![Terraform Apply Screenshot](screenshots/terraform-apply.png)
+![Terraform Apply Screenshot](screenshots/terraform-apply.png.png)
 
 ### 3. Terraform State List  
 Displays the list of managed resources after successful deployment.  
-![Terraform State List Screenshot](screenshots/terraform-state-list.png)
+![Terraform State List Screenshot](screenshots/terraform-state-list.png.png)
 
 ### 4. Running Nginx Locally  
 Demonstrates that the Nginx container is running successfully and accessible on the local port (http://localhost:8080).  
-![Nginx Localhost Screenshot](screenshots/nginx-localhost.png)
+![Nginx Localhost Screenshot](screenshots/nginx-localhost.png.png)
 
 ### 5. Terraform Destroy  
 Shows successful destruction of the Docker container and image after cleanup.  
-![Terraform Destroy Screenshot](screenshots/terraform-destroy.png)
+![Terraform Destroy Screenshot](screenshots/terraform-destroy.png.png)
+
 
 
 
