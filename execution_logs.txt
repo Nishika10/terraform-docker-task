@@ -1,0 +1,40 @@
+# Task: Infrastructure as Code (IaC) with Terraform
+# Objective: Provision a local Docker container using Terraform
+
+# Step 1: Install Docker
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+docker --version
+
+# Step 2: Install Terraform
+wget https://releases.hashicorp.com/terraform/1.6.3/terraform_1.6.3_linux_amd64.zip
+unzip terraform_1.6.3_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+terraform version
+
+# Step 3: Create Project Directory
+mkdir terraform-docker-task
+cd terraform-docker-task
+
+# Step 4: Write Terraform Configuration (main.tf)
+# (File includes Docker provider, nginx image, and container resource)
+
+# Step 5: Initialize Terraform
+terraform init
+
+# Step 6: Preview the execution plan
+terraform plan
+
+# Step 7: Apply configuration to create Docker container
+terraform apply 
+
+# Step 8: Check Terraform state
+terraform state list
+
+# Step 9: Destroy Infrastructure
+terraform destroy 
+
+# Step 10: Exported Terraform command history
+   history | grep terraform > execution_logs.txt
